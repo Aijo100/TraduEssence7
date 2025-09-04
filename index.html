@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TraduEssence7</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; }
+        header { background:#006633; color:white; text-align:center; padding:20px; }
+        header img { width:80px; height:auto; }
+        nav { margin-top:10px; }
+        nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+        section { padding:40px; text-align:center; }
+        h2 { color:#006633; }
+        .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:20px; margin-top:20px; }
+        .card { background:white; padding:15px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width:100%; height:150px; object-fit:cover; border-radius:6px; }
+        footer { background:#006633; color:white; text-align:center; padding:15px; margin-top:20px; }
+        .contacto { text-align:left; max-width:600px; margin:20px auto; }
+        .stars { color:gold; font-size:18px; margin:8px 0; transition: color 0.3s, transform 0.3s; }
+        .stars:hover { color:orange; transform: scale(1.1); }
+
+        /* Centramos solo los párrafos de misión y visión */
+        #mision p, #vision p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Carrusel reseñas */
+        #resenas .carousel {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+        #resenas .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        #resenas .card {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.jpg" alt="Logo TraduEssence7">
+    <h1>TraduEssence7</h1>
+    <p>Conectando culturas a través de la traducción e interpretación</p>
+    <nav>
+        <a href="#mision">Misión</a>
+        <a href="#vision">Visión</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#idiomas">Idiomas</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#marca">Marca</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section id="mision">
+    <h2>Misión</h2>
+    <p>
+        En TraduEssence7 nos comprometemos a conectar culturas y personas a través de servicios de traducción e interpretación precisos, claros y confiables. 
+        Nuestro propósito es facilitar la comunicación en diferentes contextos, desde lo académico hasta lo profesional, asegurando que cada mensaje conserve su esencia original. 
+        Trabajamos con responsabilidad, calidad y cercanía, para que cada cliente encuentre en nosotros un aliado en sus procesos de comunicación multilingüe. 
+        Nos aseguramos de que nuestras traducciones te ayuden a alcanzar clientes potenciales en Perú; así mismo, a través de nuestros servicios obtendrás documentos de calidad.
+    </p>
+</section>
+
+<section id="vision">
+    <h2>Visión</h2>
+    <p>
+        En TraduEssence7 buscamos, a largo plazo, volvernos la empresa líder en el mercado de las traducciones peruanas. 
+        Planeamos lograr este objetivo a través de: la iniciativa de tendencias, la actualización constante a nuestras herramientas de trabajo, 
+        hacia nuestro equipo y brindando a nuestros clientes una comunicación clara sobre la planificación y realización de nuestros proyectos.
+    </p>
+</section>
+
+<section id="servicios">
+    <h2>Servicios</h2>
+    <ul style="list-style:none; padding:0;">
+        <li>✔ Interpretación (Consecutiva y de enlace)</li>
+        <li>✔ Traducción (Simple y especializada)</li>
+        <li>✔ Transcreación (Marketing, publicidad, contenido audiovisual)</li>
+        <li>✔ Revisión de textos (Simples y especializados)</li>
+    </ul>
+</section>
+
+<section id="idiomas">
+    <h2>Nuestros Idiomas</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="espanol.jpg" alt="Español">
+            <h3>Español</h3>
+            <p>Ofrecemos traducciones precisas y naturales al español.</p>
+        </div>
+        <div class="card">
+            <img src="ingles.jpg" alt="Inglés">
+            <h3>English</h3>
+            <p>Reliable translations into English, adapted to your needs.</p>
+        </div>
+        <div class="card">
+            <img src="portugues.jpg" alt="Portugués">
+            <h3>Português</h3>
+            <p>Serviços especializados em traduções para o português.</p>
+        </div>
+        <div class="card">
+            <img src="frances.jpg" alt="Francés">
+            <h3>Français</h3>
+            <p>Traductions fidèles à l’original pour vos projets en français.</p>
+        </div>
+    </div>
+</section>
+
+<section id="especialidades">
+    <h2>Especialidades</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="traduccionpaginasweb.jpg" alt="Traducción de páginas web">
+            <h3>Traducción de páginas web</h3>
+        </div>
+        <div class="card">
+            <img src="traduccioneditorial.jpg" alt="Traducción editorial">
+            <h3>Traducción editorial</h3>
+        </div>
+        <div class="card">
+            <img src="traduccionliteraria.jpg" alt="Traducción literaria">
+            <h3>Traducción literaria</h3>
+        </div>
+        <div class="card">
+            <img src="traduccionturistica.jpg" alt="Traducción turística">
+            <h3>Traducción turística</h3>
+        </div>
+        <div class="card">
+            <img src="traducciongastronomica.jpg" alt="Traducción gastronómica">
+            <h3>Traducción gastronómica</h3>
+        </div>
+    </div>
+</section>
+
+<section id="marca">
+    <h2>Marca (qué nos diferencia)</h2>
+    <p>
+        En TraduEssence7 nos diferenciamos por ofrecer traducciones de calidad, fieles al mensaje original y adaptadas al contexto de cada cliente. 
+        Garantizamos entregas puntuales, al respetar siempre los plazos acordados. 
+        Así, resaltamos nuestro compromiso para brindar un servicio confiable y cer
+
+
+
+
+
+
+
+
+
+
